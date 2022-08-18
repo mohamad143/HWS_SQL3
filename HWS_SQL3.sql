@@ -1,8 +1,7 @@
 use HR
 --ex1
-select first_name, last_name, d.department_id, d.department_name from dbo.employees e
-join dbo.departments d on e.department_id = d.department_id
-
+SELECT E.first_name , E.last_name ,  E.department_id , D.department_name  FROM employees E 
+JOIN departments D ON E.department_id = D.department_id;
 --ex2
 select e.first_name,e.last_name,d.department_name, l.city,l.state_province from employees e
 join departments d on e.department_id= d.department_id
